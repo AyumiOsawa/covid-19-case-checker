@@ -1,13 +1,18 @@
 <template>
   <footer class="footer">
-    <h1>sitemap</h1>
-    <nav class="nav">nav</nav>
+    <Sitemap />
   </footer>
 </template>
 
 <script lang="ts">
-export default ({
+import { defineComponent } from 'vue';
+import Sitemap from './Sitemap.vue';
+
+export default defineComponent({
   name: 'Footer',
+  components: {
+    Sitemap,
+  },
 });
 </script>
 
@@ -15,7 +20,11 @@ export default ({
 .footer {
   background: #eee;
   padding: 30px;
-  position: sticky;
+  width: 100vw;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
   h1 {
     font-size: 2rem;
   }
