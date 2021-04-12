@@ -1,0 +1,155 @@
+{
+  "data": {
+    "All": {
+      "confirmed": 1358016,
+      "recovered": 17700,
+      "deaths": 16915,
+      "country": "Netherlands",
+      "population": 17035938,
+      "sq_km_area": 41526,
+      "life_expectancy": "78.3",
+      "elevation_in_meters": 30,
+      "continent": "Europe",
+      "abbreviation": "NL",
+      "location": "Western Europe",
+      "iso": 528,
+      "capital_city": "Amsterdam"
+    },
+    "Aruba": {
+        "lat": "12.5211",
+        "long": "-69.9683",
+        "confirmed": 9958,
+        "recovered": 9283,
+        "deaths": 92,
+        "updated": "2021/04/10 05:20:59+00"
+    },
+    "Bonaire, Sint Eustatius and Saba": {
+        "lat": "12.1784",
+        "long": "-68.2385",
+        "confirmed": 196,
+        "recovered": 180,
+        "deaths": 3,
+        "updated": "2021/01/08 23:22:27+00"
+    },
+    "Curacao": {
+        "lat": "12.1696",
+        "long": "-68.99",
+        "confirmed": 10909,
+        "recovered": 6121,
+        "deaths": 62,
+        "updated": "2021/04/10 05:20:59+00"
+    },
+    "Drenthe": {
+        "lat": "52.862485",
+        "long": "6.618435",
+        "confirmed": 28018,
+        "recovered": 0,
+        "deaths": 332,
+        "updated": "2021/04/10 05:20:59+00"
+    },
+    "Flevoland": {
+        "lat": "52.550383",
+        "long": "5.515162",
+        "confirmed": 30319,
+        "recovered": 0,
+        "deaths": 226,
+        "updated": "2021/04/10 05:20:59+00"
+    },
+    "Friesland": {
+        "lat": "53.087337",
+        "long": "5.7925",
+        "confirmed": 34758,
+        "recovered": 0,
+        "deaths": 454,
+        "updated": "2021/04/10 05:20:59+00"
+    },
+    "Gelderland": {
+        "lat": "52.061738",
+        "long": "5.939114",
+        "confirmed": 147810,
+        "recovered": 0,
+        "deaths": 1911,
+        "updated": "2021/04/10 05:20:59+00"
+    },
+    "Groningen": {
+        "lat": "53.217922",
+        "long": "6.741514",
+        "confirmed": 31973,
+        "recovered": 0,
+        "deaths": 239,
+        "updated": "2021/04/10 05:20:59+00"
+    },
+    "Limburg": {
+        "lat": "51.209227",
+        "long": "5.93387",
+        "confirmed": 87501,
+        "recovered": 0,
+        "deaths": 1527,
+        "updated": "2021/04/10 05:20:59+00"
+    },
+    "Noord-Brabant": {
+        "lat": "51.561174",
+        "long": "5.184942",
+        "confirmed": 210836,
+        "recovered": 0,
+        "deaths": 3024,
+        "updated": "2021/04/10 05:20:59+00"
+    },
+    "Noord-Holland": {
+        "lat": "52.600906",
+        "long": "4.918688",
+        "confirmed": 229913,
+        "recovered": 0,
+        "deaths": 2456,
+        "updated": "2021/04/10 05:20:59+00"
+    },
+    "Overijssel": {
+        "lat": "52.444558",
+        "long": "6.441722",
+        "confirmed": 88329,
+        "recovered": 0,
+        "deaths": 1080,
+        "updated": "2021/04/10 05:20:59+00"
+    },
+    "Sint Maarten": {
+        "lat": "18.0425",
+        "long": "-63.0548",
+        "confirmed": 2182,
+        "recovered": 2116,
+        "deaths": 27,
+        "updated": "2021/04/10 05:20:59+00"
+    },
+    "Unknown": {
+        "lat": "",
+        "long": "",
+        "confirmed": 2880,
+        "recovered": 0,
+        "deaths": 13,
+        "updated": "2021/04/10 05:20:59+00"
+    },
+    "Utrecht": {
+        "lat": "52.084251",
+        "long": "5.163824",
+        "confirmed": 103878,
+        "recovered": 0,
+        "deaths": 1207,
+        "updated": "2021/04/10 05:20:59+00"
+    },
+    "Zeeland": {
+        "lat": "51.47936",
+        "long": "3.861559",
+        "confirmed": 22242,
+        "recovered": 0,
+        "deaths": 228,
+        "updated": "2021/04/10 05:20:59+00"
+    },
+    "Zuid-Holland": {
+        "lat": "51.937835",
+        "long": "4.462114",
+        "confirmed": 316314,
+        "recovered": 0,
+        "deaths": 4034,
+        "updated": "2021/04/10 05:20:59+00"
+    }
+  }
+}

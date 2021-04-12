@@ -1,20 +1,23 @@
 <template>
-  <div class="app">
+  <div>
     <Header />
+    <APIData />
     <router-view />
     <Footer />
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue';
-import Footer from './components/Footer.vue';
+import Header from './components/layout/Header.vue';
+import Footer from './components/layout/Footer.vue';
+import APIData from './components/shared/APIData.vue';
 
 export default {
   name: 'App',
   components: {
     Header,
     Footer,
+    APIData,
   },
 };
 </script>
@@ -25,7 +28,7 @@ export default {
   padding: 0;
 }
 
-.app {
+#app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
