@@ -1,22 +1,22 @@
 <template>
-  <h1>data</h1>
-  <ul v-for="(value, key, index) in data" :key="index">
-    <h2>{{ key }}</h2>
-    <li>{{ value.confirmed }}</li>
-  </ul>
-  <div id="globe"></div>
+  <div class="globe">
+    <h1>globe</h1>
+    globe here
+    <svg class="globe__svg" id="globe">
+    </svg>
+  </div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent } from "vue";
 // import * as d3 from 'd3';
 // import versor from 'versor';
 // import topojson from 'topojson-client';
 
 export default defineComponent({
-  name: 'Globe',
+  name: "Globe",
   props: {
-    data: Object,
+    countryData: Object,
   },
   computed: {
     createGlobe() {
@@ -30,7 +30,10 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-#globe {
-  background-color: azure;
+.globe {
+  background-color:lightgreen;
+  __svg {
+    background-color: blueviolet;
+  }
 }
 </style>

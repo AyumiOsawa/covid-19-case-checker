@@ -1,31 +1,43 @@
 <template>
-  <Globe :data="data" />
+  <Home :countryData="countryData" :countryType="Country" />
 </template>
 
-<script>
-import { defineComponent } from 'vue';
+<script lang="ts">
+import { defineComponent } from "vue";
 
-import Globe from '../Globe.vue';
+import Home from "../../views/Home.vue";
+
+interface Country {
+  [countryName: string]: {
+    All?: {
+      confirmed: number;
+      country: number;
+      lat: number;
+      long: number;
+    };
+  };
+}
 
 export default defineComponent({
-  name: 'APIData',
+  name: "APIData",
   components: {
-    Globe,
+    Home,
   },
   data() {
-    return {
-      data: {},
+    const countryData: Country | Record<string, never> = {
+      countryData: {},
     };
+    return countryData;
   },
   methods: {
     async fetchData() {
-      const response = await fetch('http://localhost:3000/data');
+      const response = await fetch("http://localhost:3000/Netherlands");
       const data = await response.json();
       return data;
     },
   },
   async created() {
-    this.data = await this.fetchData();
+    this.countryData = await this.fetchData();
   },
 });
 </script>

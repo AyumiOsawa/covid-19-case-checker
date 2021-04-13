@@ -2,10 +2,7 @@
   <h1 class="sitemap">sitemap</h1>
   <nav>
     <ul>
-      <li
-        v-for="route, index in routes"
-        v-bind:key="index"
-      >
+      <li v-for="(route, index) in routes" v-bind:key="index">
         <a v-bind:href="[route.path]">
           {{ route.name }}
         </a>
@@ -15,10 +12,10 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: 'Sitemap',
+  name: "Sitemap",
   data() {
     return {
       routes: this.$router.options.routes,
@@ -30,6 +27,7 @@ export default defineComponent({
 <style lang="scss" scoped>
 h1 {
   font-size: 1.5rem;
+  padding: 1rem;
 }
 ul {
   list-style: none;

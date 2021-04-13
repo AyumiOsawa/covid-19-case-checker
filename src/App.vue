@@ -8,12 +8,12 @@
 </template>
 
 <script>
-import Header from './components/layout/Header.vue';
-import Footer from './components/layout/Footer.vue';
-import APIData from './components/shared/APIData.vue';
+import Header from "./components/layout/Header.vue";
+import Footer from "./components/layout/Footer.vue";
+import APIData from "./components/shared/APIData.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Header,
     Footer,
@@ -35,6 +35,7 @@ export default {
   text-align: center;
   color: #2c3e50;
   min-height: 100vh;
+  width: 100vw;
   position: relative;
 }
 </style>
