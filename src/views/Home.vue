@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    home component here
+    home component here:
     <Globe :countryData="countryData" />
     <Cards :countryData="countryData" />
   </div>

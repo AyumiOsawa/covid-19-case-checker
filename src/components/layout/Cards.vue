@@ -1,7 +1,6 @@
 <template>
   <div class="card__area">
-    countries? {{countries}}
-    <div class="card__container" v-for="(datum, place, index) in countries" :key="index">
+    <div class="card__container" v-for="(datum, place, index) in countryData" :key="index">
       <Card :country="datum" :place="place" />
     </div>
   </div>
@@ -16,11 +15,6 @@ export default defineComponent({
   name: "Cards",
   components: {
     Card,
-  },
-  data() {
-    return {
-      countries: this.countryData,
-    };
   },
   props: ["countryData"],
   computed: {
@@ -43,6 +37,8 @@ export default defineComponent({
   }
   &__container {
     width: 30%;
+    height: 10rem;
+    margin: 10px 0;
     border: 3px solid navy;
     border-radius: 0.5rem;
     :hover {
@@ -50,5 +46,4 @@ export default defineComponent({
     }
   }
 }
-
 </style>

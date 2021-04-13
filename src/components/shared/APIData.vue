@@ -1,5 +1,5 @@
 <template>
-  <Home :countryData="countryData" :countryType="Country" />
+  <Home :countryData="countryData" />
 </template>
 
 <script lang="ts">
@@ -11,7 +11,6 @@ interface Country {
   [countryName: string]: {
     All?: {
       confirmed: number;
-      country: number;
       lat: number;
       long: number;
     };
