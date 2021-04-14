@@ -7,10 +7,13 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import Header from "./components/layout/Header.vue";
 import Footer from "./components/layout/Footer.vue";
-import APIData from "./components/shared/APIData.vue";
+import APIData from "./components/services/APIData.vue";
+
+// console.log('api', APIData);
+// console.log('api 1', APIData)
 
 export default {
   name: "App",

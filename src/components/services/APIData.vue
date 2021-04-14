@@ -1,11 +1,9 @@
 <template>
-  <Home :countryData="countryData" />
+  <p></p>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-
-import Home from "../../views/Home.vue";
 
 interface Country {
   [countryName: string]: {
@@ -19,24 +17,20 @@ interface Country {
 
 export default defineComponent({
   name: "APIData",
-  components: {
-    Home,
-  },
-  data() {
-    const countryData: Country | Record<string, never> = {
-      countryData: {},
+  async data() {
+    const countryData: Country | Record<string, never> = {};
+    return {
+      countryData,
     };
-    return countryData;
   },
   methods: {
     async fetchData() {
       const response = await fetch("http://localhost:3000/Netherlands");
-      const data = await response.json();
-      return data;
+      (await this).countryData = await response.json();
     },
   },
   async created() {
-    this.countryData = await this.fetchData();
+    this.fetchData();
   },
 });
 </script>

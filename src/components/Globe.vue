@@ -2,8 +2,7 @@
   <div class="globe">
     <h1>globe</h1>
     globe here
-    <svg class="globe__svg" id="globe">
-    </svg>
+    <svg class="globe__svg" id="globe"></svg>
   </div>
 </template>
 
@@ -31,7 +30,7 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .globe {
-  background-color:lightgreen;
+  background-color: lightgreen;
   __svg {
     background-color: blueviolet;
   }
