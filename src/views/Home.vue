@@ -1,21 +1,19 @@
 <template>
   <div class="home">
     home component here:
-    countryData: {{countryData}}
     <Globe />
-    <Cards :countryData="countryData" />
+    <Cards />
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from "vue";
+import { defineComponent, toRefs } from "vue";
 
 import Globe from "@/components/Globe.vue";
 import Cards from "@/components/layout/Cards.vue";
-import APIData from "@/components/services/APIData.vue";
+// import APIData from "@/components/services/APIData.vue";
 
-console.log('home c data', APIData.countryData);
-
+// console.log('home, prop c data', countryData);
 
 export default defineComponent({
   name: "Home",
@@ -23,9 +21,10 @@ export default defineComponent({
     Globe,
     Cards,
   },
+  props: ["countryData"],
   data() {
     return {
-      countryData: ref(APIData.countryData),
+      // countryData: ref(APIData.countryData),
     };
   },
   method: {

@@ -1,7 +1,6 @@
 <template>
   <div>
     <Header />
-    <APIData />
     <router-view />
     <Footer />
   </div>
@@ -10,17 +9,12 @@
 <script lang="ts">
 import Header from "./components/layout/Header.vue";
 import Footer from "./components/layout/Footer.vue";
-import APIData from "./components/services/APIData.vue";
-
-// console.log('api', APIData);
-// console.log('api 1', APIData)
 
 export default {
   name: "App",
   components: {
     Header,
     Footer,
-    APIData,
   },
 };
 </script>
