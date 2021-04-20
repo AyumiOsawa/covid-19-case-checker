@@ -1,6 +1,7 @@
 import { InjectionKey } from "vue";
 import { createStore, Store } from "vuex";
 import fetchData from "@/api";
+import Country from '@/api';
 
 const store = createStore<State>({
   state() {
@@ -10,24 +11,24 @@ const store = createStore<State>({
   },
   mutations: {
     setData() {
-      const newData = fetchData();
-      state.countryData({
-        ...state.countryData,
-        ...newData,
-      });
+      // const newData = fetchData();
+      // state.countryData({
+      //   ...state.countryData,
+      //   ...newData,
+      // });
     },
   },
 });
 
-interface Country {
-  [countryName: string]: {
-    All?: {
-      confirmed: number;
-      lat: number;
-      long: number;
-    };
-  };
-}
+// interface Country {
+//   [countryName: string]: {
+//     All?: {
+//       confirmed: number;
+//       lat: number;
+//       long: number;
+//     };
+//   };
+// }
 
 export interface State {
   countryData: Array<Country> | Record<string, never>;

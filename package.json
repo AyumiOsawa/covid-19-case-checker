@@ -9,6 +9,7 @@
     "serve-api": "json-server --watch db.json"
   },
   "dependencies": {
+    "@types/vue": "^2.0.0",
     "core-js": "^3.6.5",
     "es6-promise": "^4.2.8",
     "vue": "^3.0.0",

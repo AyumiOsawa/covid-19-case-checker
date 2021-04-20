@@ -8,7 +8,8 @@ declare module '@vue/runtime-core' {
     count: number
   }
 
-  // provide typings for `this.$store`
+  // provide typings for 
+  // `this.$store`
   interface ComponentCustomProperties {
     $store: Store<State>
   }
