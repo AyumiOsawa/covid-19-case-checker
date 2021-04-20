@@ -1,17 +1,17 @@
 <template>
-  <div class="app">
+  <div>
     <Header />
     <router-view />
     <Footer />
   </div>
 </template>
 
-<script>
-import Header from './components/Header.vue';
-import Footer from './components/Footer.vue';
+<script lang="ts">
+import Header from "./components/layout/Header.vue";
+import Footer from "./components/layout/Footer.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Header,
     Footer,
@@ -25,13 +25,14 @@ export default {
   padding: 0;
 }
 
-.app {
+#app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   min-height: 100vh;
+  width: 100vw;
   position: relative;
 }
 </style>

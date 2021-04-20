@@ -5,11 +5,11 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
-import Sitemap from './Sitemap.vue';
+import { defineComponent } from "vue";
+import Sitemap from "./Sitemap.vue";
 
 export default defineComponent({
-  name: 'Footer',
+  name: "Footer",
   components: {
     Sitemap,
   },
@@ -19,7 +19,7 @@ export default defineComponent({
 <style lang="scss" scoped>
 .footer {
   background: #eee;
-  padding: 30px;
+  height: 20vh;
   width: 100vw;
   display: block;
   position: absolute;

@@ -11,10 +11,16 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: 'Header',
+  name: "Header",
+  data() {
+    return {
+      info: [],
+    };
+  },
+  methods: {},
 });
 </script>
 
@@ -24,6 +30,7 @@ export default defineComponent({
   position: sticky;
   top: 0;
   left: 0;
+  background: white;
   .nav ul {
     list-style: none;
     margin: 1rem 0;
